@@ -15,7 +15,7 @@ Separating code into layers makes the application easier to understand, test, an
 
 ## Typical Application Layers
 
-In this document and the relevant case studies, we reference the following five application layers:
+In this document and the relevant case studies, we reference the following six application layers:
 
 1. **Data Layer** – This is where non-volatile data persistence occurs, likely through a database like SQLite or LiteDB, but could be implemented with XML files or other suitable mechanisms.
 2. **Data Access Layer** – This layer is a wrapper around the Data Layer providing Create, Read, Update, Delete (CRUD) operations on the data without revealing implementation details to the caller. For instance, the DAL might contain SQL queries to interact with the data, but the code referencing it doesn't need to be aware of this.
